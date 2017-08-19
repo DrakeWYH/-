@@ -1,0 +1,20 @@
+问他题目数据结构说明：
+例子：
+{"resultCode":{"code":0,"detail":"成功"},"value":{"id":"B126E8A4FC2619E51131C4095636DC5C","grade":7,"gradeName":"高三","subject":2,"courseName":"数学","question":"下列大小关系正确的是<blank/>","knowledge":[25675],"options":["lg1.1＜lg1.2","lg1.1＞lg1.2","1.1<sup>3</sup>＞1.2<sup>3</sup>","0.2<sup>1.1</sup>＞0.2<sup>1.2</sup>"],"analysis":"∵函数y=lgx在（0，+∞）上单调递增，∴lg1.1＜lg1.2，<br/>故选A．","answers":["A"],"type":0}}
+
+所有题目保存在answer.txt文件中，以json字符串形式保存，每一行是一道题目，层次架构为：
+resultCode:
+	code:状态码，成功为0，所有题目都为0。
+	detail:状态介绍，所有题目都为“成功”。
+value:
+	id:题目id。
+	grade:年级代号。
+	gradeName:年级名称。
+	subject:科目代码。
+	courseName:科目名称。
+	question:问题。
+	knowledge:知识点代码（暂时与具体知识点对应不上）。
+	options:选项（如果不是选择题则为空）。
+	analysis:分析（可为空）。
+	answers:答案。
+	type:题目类型。
